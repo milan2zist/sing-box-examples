@@ -1,18 +1,19 @@
-# [sing-box](https://github.com/SagerNet/sing-box) 安装指南
+# [sing-box](https://github.com/SagerNet/sing-box) installation guide
 
-## 服务端
+## Server
 
 ### 安装
 
-1. 下载程序（**linux-amd64**）
+1. download program（**linux-amd64**）
 
 ```
 curl -Lo /root/sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/v1.3.6/sing-box-1.3.6-linux-amd64.tar.gz && tar -xzf /root/sing-box.tar.gz && cp -f /root/sing-box-*/sing-box /root && rm -r /root/sing-box.tar.gz /root/sing-box-* && chown root:root /root/sing-box && chmod +x /root/sing-box && mv -f /root/sing-box /usr/local/bin
 ```
 
-- [编译程序](https://github.com/chika0801/sing-box-examples/blob/main/compile_sing-box.md)
+- [compile program](https://github.com/chika0801/sing-box-examples/blob/main/compile_sing-box.md)
 
-2. 上传配置、证书和私钥
+2. upload configuration 、certificate and private key
+
 
 - 将配置文件改名为 **sing-box_config.json**，将证书文件改名为 **fullchain.cer**，将私钥文件改名为 **private.key**，将它们上传到 **/root** 目录
 
